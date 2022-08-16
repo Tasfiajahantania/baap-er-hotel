@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank mony</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl text-center mt-5">
+            Let's get some <span class="font-semibold text-indigo-800	">Moooooooony</span>!!!
+        </h1>
+    </header>
+    <main>
+        <section class="mt-12">
+            <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto">
+                <div class="bg-emerald-400 p-8 rounded-xl text-white">
+                    <h4 class="text-3xl">Deposit</h4>
+                    <h2 class="text-5xl">$ <span id="deposit-total">00</span></h2>
+                </div>
+
+                <div class="bg-rose-400	 p-8 rounded-xl text-white">
+                    <h4 class="text-3xl">Withdrow</h4>
+                    <h2 class="text-5xl">$ <span id="withdrow-total">00</span></h2>
+                </div>
+                <div class="bg-orange-400 p-8 rounded-xl text-white">
+                    <h4 class="text-3xl">Balence</h4>
+                    <h2 class="text-5xl">$ <span id="blance-total">1240</span></h2>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- deposit and Withdrow -->
+        <section class="mt-12">
+            <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto">
+                <div class="bg-violet-400 p-8 rounded-xl">
+                    <h4 class="text-3xl mb-4 text-white"> Please Deposit</h4>
+
+                    <input class="w-9/12 block mb-2 px-3 rounded p-1" type="text" name="" id="deposit-field"
+                        placeholder="$ Amount you want to deposit">
+
+                    <button id="btn-deposit" class="bg-indigo-800 hover:bg-sky-700 px-8 py-2 text-white text-white font-medium
+                        rounded">Deposit</button>
+
+
+                </div>
+
+                <div class="bg-indigo-400 p-8 rounded-xl">
+                    <h4 class="text-3xl mb-4 text-white"> Please Withdrow</h4>
+                    <input class="w-9/12 block mb-2 px-3 rounded p-1" type="email" name="" id="withdrow-field"
+                        placeholder="$ Amount you want to Withdrow">
+                    <button id="btn-withdrow" class="bg-indigo-800 hover:bg-sky-700 px-8 py-2 text-white text-white font-medium
+                        rounded">Withdrow</button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <script src="withdrow.js"></script>
+    <script src="deposit.js"></script>
+</body>
+
+</html>
